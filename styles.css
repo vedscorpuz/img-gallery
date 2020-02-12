@@ -28,6 +28,10 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 1.5rem;
+    grid-template-areas: 
+        'img-1 img-2 img-3 img-3'
+        'img-1 img-4 img-5 img-6'
+        'img-7 img-7 img-8 img-6';
 }
 
 .image-gallery a {
@@ -43,7 +47,7 @@ body {
     text-decoration: none;
 }
 
-.icon {
+.image-gallery a ion-icon {
     color: rgba(255, 255, 255, 0.6);
     font-size: 3rem;
     position: relative;
@@ -51,7 +55,7 @@ body {
     padding: 1rem 3rem;
     border: 2px solid rgba(255, 255, 255, 0.6);
     border-radius: .4rem;
-    /*opacity: 0;*/
+    opacity: 0;
     transition: opacity .5s;
 }
 
@@ -65,4 +69,51 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
     transition: opacity .5s;
+}
+
+.image-gallery a:hover ion-icon, 
+.image-gallery a:hover::before {
+    opacity: 1;
+}
+
+.img-1 {
+    grid-area: img-1;
+    min-height: 51.5rem;
+    background-image: url(img/img1.jpg);
+}
+
+.img-2 {
+    grid-area: img-2;
+    background-image: url(img/img2.jpg);
+}
+
+.img-3 {
+    grid-area: img-3;
+    background-image: url(img/img3.jpg);
+}
+
+.img-4 {
+    grid-area: img-4;
+    background-image: url(img/img4.jpg);
+}
+
+.img-5 {
+    grid-area: img-5;
+    background-image: url(img/img5.jpg);
+}
+
+.img-6 {
+    grid-area: img-6;
+    min-height: 51.5rem;
+    background-image: url(img/img6.jpg);
+}
+
+.img-7 {
+    grid-area: img-7;
+    background-image: url(img/img7.jpg);
+}
+
+.img-8 {
+    grid-area: img-8;
+    background-image: url(img/img8.jpg);
 }
