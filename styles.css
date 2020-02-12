@@ -140,3 +140,25 @@ body {
         min-height: 20rem;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .image-gallery{
+        grid-template-areas: 
+        'img-1 img-1 img-1 img-1'
+        'img-2 img-2 img-2 img-2'
+        'img-3 img-3 img-3 img-3'
+        'img-4 img-4 img-4 img-4'
+        'img-5 img-5 img-5 img-5'
+        'img-6 img-6 img-6 img-6'
+        'img-7 img-7 img-7 img-7'
+        'img-8 img-8 img-8 img-8';
+    }
+
+    .image-gallery a, 
+    .img-1, 
+    .img-6 {
+        height: 30rem;
+    }
+
+}
+
